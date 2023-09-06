@@ -146,13 +146,13 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "custom_components",
+      "name": "custom_components_shammy",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-08-22T07:22:28.170826Z",
+  "generated": "2023-08-28T05:00:33.882079Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }

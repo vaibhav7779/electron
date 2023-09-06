@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CustomElevatedButton extends StatefulWidget {
+class CustomElevatedButton extends StatelessWidget {
   final Gradient gradient;
   final VoidCallback? onPressed;
   final Widget child;
@@ -14,20 +14,15 @@ class CustomElevatedButton extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<CustomElevatedButton> createState() => _CustomElevatedButtonState();
-}
-
-class _CustomElevatedButtonState extends State<CustomElevatedButton> {
-  @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: const BorderRadius.all(Radius.circular(20)),
-        gradient: widget.gradient,
+        gradient: gradient,
       ),
       child: ElevatedButton(
-        onPressed: widget.onPressed,
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.transparent,
           shadowColor: Colors.transparent,
@@ -35,7 +30,7 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
         ),
-        child: widget.child,
+        child: child,
       ),
     );
   }

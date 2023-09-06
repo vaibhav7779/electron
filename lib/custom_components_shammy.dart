@@ -1,4 +1,4 @@
-library custom_components;
+library custom_components_shammy;
 
 export 'src/appbar.dart';
 

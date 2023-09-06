@@ -1,7 +1,7 @@
-name: custom_components
-description: Reactive components for Flutter.
+name: custom_components_shammy
+description: Shammy Raushan Flutter Reusable Components.
 version: 0.0.1
-homepage:
+homepage: https://github.com/vaibhav7779/electron
 
 environment:
   sdk: '>=3.0.6 <4.0.0'
